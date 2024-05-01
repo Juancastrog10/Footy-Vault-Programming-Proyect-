@@ -1,0 +1,633 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;}
+
+body{
+    background-color: #ffffff;
+}
+header{ 
+    background: rgb(245,245,245);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(235,250,243,1) 67%, rgba(212,245,229,1) 92%, rgba(171,236,204,0.9220063025210083) 100%);
+    height: 15vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo{ 
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.izq{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: auto;    
+    width: 10vw;
+}
+.izqq{
+    display: flex;
+    gap: 20px;
+    margin: auto;   
+    width: 30vw;
+
+}
+.iconperson{
+    border: 0;
+    background-color: transparent;
+}
+.menu{ 
+    display: flex;
+    width: 105vh;
+    height: 6vh;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10vw;
+    text-decoration: none;
+    font-size: 18px;   
+
+}
+#Home{
+    color: #2EBB77;
+    display: flex;
+}
+#myaccount{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+#a2{
+    color: white;
+}
+.busqueda{
+    padding: 3px;
+    width: 15vw;
+    border: solid rgba(0, 0, 0, 0.363) 1px;
+    border-radius: 20px;
+}
+.busqelements{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 4vh;
+    width: 12vw;
+    gap: 8px;
+}
+#busq{
+    
+    background-color: transparent;
+    height: 3vh;
+    width: 10vw;
+    border: none;
+    font-size: 18px;
+    opacity: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    
+}
+.banner1{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+.textizq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    gap: 1pt;
+}
+.contenedortextizq{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.imgder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+
+}
+.text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8ffe7;
+    border-radius: 10px;
+    height: 3vh;
+    width: 8vw;
+    font-size: 10px;
+    font-weight: 600;
+    
+}
+#find{
+    color: #088d3c;
+    
+}
+.text2{
+    height: 20vh;
+    width: 26vw;
+    font-size: 32px;
+}
+.text3{
+    height: 6vh;
+    width: 35vw;
+    font-size: 14px;
+    font-weight: 300;
+    
+}
+.botones{
+    margin: 8px;
+    height: 8vh;
+    width: 30vw;
+}
+.butt2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 0;
+    color: white;
+    height: 7vh;
+    width: 11vw;
+    background-color: #2EBB77;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.butt3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 0;
+    color: #003316;
+    height: 7vh;
+    width: 11vw;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.text5{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 6vh;
+    width: 30vw;
+}
+.letras{
+    font-size: 11px;
+}
+.banner2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+    height: 30vh;
+    background: linear-gradient(0deg, rgba(38,153,100,1) 0%, rgba(108,188,150,1) 23%, rgba(165,214,190,1) 51%, rgba(255,255,255,0.9332107843137255) 100%);
+}
+#p1{
+    color: rgba(0, 0, 0, 0.568);
+}
+#marcas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+}
+.textosland{
+    height: 10vh;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+}
+.elementosinfo{
+    height: 130vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+.elementos{
+    height: 130vh;
+    width: 60vw;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.elementos1{
+    display: flex;
+}
+.infoimg1{
+    height: 35vh;
+    width: 25vw;
+    background-image: url(Recursos/Body/imagen1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 35vh;
+    width: 6vw;
+}
+.circulo{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #2EBB77;
+    height: 30px;
+    width: 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 600;
+}
+.infotext{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    height: 35vh;
+    width: 25vw;
+}
+.infoimg2{
+    height: 35vh;
+    width: 25vw;
+    background-image: url(Recursos/Body/Imagen2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.infoimg3{
+    height: 35vh;
+    width: 25vw;
+    background-image: url(Recursos/Body/imagen3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.infoh1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.infop{
+    color: gray;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.ourteam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-image: url(Recursos/Body/team/Fondo\ Circulos.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.elementosteam{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.elementosteam1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 24vw;
+    height: 50vh;
+    gap: 30px;
+    
+}
+#textteam{
+    color: white;
+}
+.elementosteam2{
+    display: flex;
+    width: 64vw;
+    height: 50vh;
+}
+.recuadro{
+    width: 20vw;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
+
+}
+.foto{
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url(Recursos/Body/JuanPablo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 75%;
+}
+.foto2{
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url(Recursos/Body/JulianaLinares.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 75%;
+}
+.textoteam{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    gap: 5px;
+    padding: 10px;
+    height: 25%;
+}
+#textocentro{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 24vw;
+    font-size: 13px;
+}
+#nombre{
+    font-weight: 700;
+    font-size: 17px;
+}
+.usepage{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+}
+.contenedor1{
+    width: 40%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 90vh;
+}
+.textcont{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 22vw;
+    gap: 6vh;
+}
+.cuadro{
+    padding: 15px;
+    background-color: white;
+    height: 34vh;
+    border-radius: 15px;
+    box-shadow: 1px 6px 22px -10px rgba(0,0,0,0.79);
+
+}
+.cuadroinfo{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 5px;
+    gap: 15px;
+    height: 25vh;
+    width: 13vw;
+}
+.infouse{
+    font-size: 19px;
+}
+.arribaabajo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    gap: 35px;
+    
+}
+.arriba{
+    display: flex;
+    align-items: flex-start;
+    
+    width: 49vw;
+    gap: 30px;
+}
+.abajo{
+    display: flex;
+    align-items: flex-start;
+    width: 49vw;
+    gap: 30px;
+}
+.footer{
+    /* border: solid; */
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+.contenedorfooter{
+    /* border: solid; */
+    display: flex;
+    width: 80vw;
+    max-height: 30vh;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.columnas{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    /* border:solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: -50px;
+    height: 20vh ;
+    max-width: 300px;
+    color:rgb(126, 126, 126);
+}
+.columna2{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    /* border:solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: -50px;
+    height: 15vh ;
+    max-width: 300px;
+    color:rgb(126, 126, 126);
+}
+.columna3{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    /* border:solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: -50px;
+    height: 8vh ;
+    max-width: 300px;
+    color:rgb(126, 126, 126);
+}
+.columna4{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    /* border:solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: -50px;
+    height: 18vh ;
+    max-width: 300px;
+    color:rgb(126, 126, 126);
+}
+.inputfooter2{
+    border: 1px solid #d3d6e4;
+    border-radius: 0.3rem;
+    background-color: white;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.inputfooter{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-style: normal;
+    height: 32px;
+    width: 260px;
+    box-shadow: 0 2px 3px rgba(0 0 0 / 0.15);
+    background-color: transparent;
+    border:0;
+}
+.logofooter{
+    /*border: solid;*/
+    width: 9.8vw;
+    height: 4.8vh;
+}
+.pv{
+    text-decoration: line-through;
+    color: gray;
+    font-size: small;
+}
+.multicolor{
+    height: 1vh;
+    background: rgb(255,238,80);
+    background: linear-gradient(90deg, rgba(255,238,80,1) 0%, rgba(255,197,70,1) 11%, rgba(255,83,71,1) 24%, rgba(213,213,213,1) 37%, rgba(123,255,112,1) 49%, rgba(95,146,255,1) 63%, rgba(195,90,255,1) 77%, rgba(255,93,232,1) 89%, rgba(255,85,163,1) 100%);
+}
+.pagos{
+    /*border: solid;*/
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: rgb(245, 245, 245);
+}
+.metodos{
+    /*border: solid;*/
+    border-radius: 5px;
+    height: 35px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rights{
+    /* border: solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    height: 4vh;
+    align-items: flex-start;
+}
+.rf{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(126, 126, 126);
+}
+.nf{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+  color: black;
+}
+.pc{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.pn{
+    color:rgb(46, 187, 119) ;
+    font-weight: 800;
+}
+.flechas{
+    width: 20px;
+    height: 20px;
+}
+.grupo1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /*border: solid;*/
+}
+.grupo2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /*border: solid;*/
+}

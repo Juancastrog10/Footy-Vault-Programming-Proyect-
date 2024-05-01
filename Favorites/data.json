@@ -1,0 +1,76 @@
+{"familiadeproductos":
+    [
+        {
+            "id":1,
+            "name": "Barelona",
+            "price": 19.95,
+            "image": "./Recursos/Camisas/Camisa Barelona.png"
+        },
+        {
+            "id":2,
+            "name": "Inter de Milan",
+            "price": 14.95,
+            "image": "./Recursos/Camisas/Camisa Inter Milan.png"
+        },
+        {
+            "id":3,
+            "name": "Tottenham",
+            "price": 26.00,
+            "image": "./Recursos/Camisas/Spurs.png"
+        },
+        {
+            "id":4,
+            "name": "France",
+            "price": 28.00,
+            "image": "./Recursos/Camisas/Francia.png"
+        },
+        {
+            "id":5,
+            "name": "Everton",
+            "price": 30.00,
+            "image": "./Recursos/Camisas/Camisa Everton.png"
+        },
+        {
+            "id":6,
+            "name": "Argentina",
+            "price": 24.00,
+            "image": "./Recursos/Camisas/Camisa Argentina.webp"
+        },
+        {
+            "id":7,
+            "name": "Liverpool",
+            "price": 17.00,
+            "image": "./Recursos/Camisas/Camisa Liverpool.png"
+        },
+        {
+            "id":8,
+            "name": "Man. City",
+            "price": 38.00,
+            "image": "./Recursos/Camisas/Camisa City.png"
+        },
+        {
+            "id":9,
+            "name": "England",
+            "price": 30.00,
+            "image": "./Recursos/Camisas/Camisa Inglaterra.png"
+        },
+        {
+            "id":10,
+            "name": "Roma",
+            "price": 24.00,
+            "image": "./Recursos/Camisas/Camisa Roma.png"
+        },
+        {
+            "id":11,
+            "name": "Boca Juniors",
+            "price": 17.00,
+            "image": "./Recursos/Camisas/Camisa Boca.png"
+        },
+        {
+            "id":12,
+            "name": "Italy",
+            "price": 38.00,
+            "image": "./Recursos/Camisas/Camisa Italia.png"
+        }
+    ]
+}

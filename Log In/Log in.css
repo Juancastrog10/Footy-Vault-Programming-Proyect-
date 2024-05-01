@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(165,237,185);
+    background: linear-gradient(90deg, rgba(165,237,185,1) 0%, rgba(59,183,126,1) 100%);;
+}
+.contenidoizq{
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    width: 2vw;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    height: 95vh;
+    width: 98vw;
+    background-color: #1d1d1dc5;
+    border-radius: 20px;
+    position: relative;
+    z-index: -3;
+}
+#pstyle{
+    color: white;
+}
+a{
+    text-decoration: underline;
+    color: #2EBB77;
+}
+
+.izq{
+    
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px ;
+    background-color: rgba(58, 58, 58, 0.479);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+    width: 40%;
+    
+
+}
+.circulos {
+    background-image: url(./Recursos/Fondos/circulos_Mesa\ de\ trabajo\ 1.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 95vh;
+    width: 98vw;
+    border-radius: 20px;
+    display: flex;
+    opacity: 0.2;
+    position: absolute;
+    z-index: -1;
+}
+
+.blanco{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    
+}
+
+.logo{
+    margin: 40px;
+    height: 5vh;
+    display: flex ;
+    width: 90%;
+    justify-content: flex-start;
+    
+}
+.logoi{
+    /* border: solid; */
+    width: 23vh;
+    height: 4.5vh;
+    border-color: blue;
+}
+.li{
+    /* border: solid; */
+    border-color: cornflowerblue;
+    width: 28vw;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorli{
+    /* border: solid; */
+    border-color: chartreuse;
+    width: 250px;
+    height: 250px;
+}
+.inputizqu{
+    /* border: solid; */
+    border-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    width: 28vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.question{
+    width: 17vw;
+    display: flex;
+    justify-content: space-between;
+}
+.contdown2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+}
+.continput{
+    /* border: solid; */
+    width: 16vw;
+    height: 4.5vh;
+    display: flex;
+    justify-content: center;
+}
+input{
+    border: solid;
+    border-color: #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    padding: 12px;
+}
+.boton{
+    /* border: solid; */
+    border-color: beige;  
+    width: 28vw;
+    height: 6vh;
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.contbuton{
+    /* border: solid; */
+    width: 8vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+}
+button{
+    border: 0;
+    background-color: #2EBB77;
+    color: white;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+.der{
+    /* border: solid; */
+    border-color:chartreuse;
+    height: 95vh;
+    width: 60vw;
+    border-radius: 20px;
+    
+}
+.contenedorder{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tit{
+    /* border: solid; */
+    border-color: rgb(16, 21, 97);
+    height: 40vh;
+    width: 70vh;
+}
+.titcont{
+    /* border: solid; */
+    font-size: 70px;
+    color: white;
+}
+.lineaverde{
+    /* border: solid; */
+    border-color: rgb(77, 172, 124);
+    height: 5vh;
+    width: 70vh;
+    display: flex;
+    align-items: flex-start;
+}
+.verde{
+    /* border: solid; */
+    height: 1vh;
+    width: 19vh;
+    background-color: #2EBB77;
+}
+.contenedorparraf{
+    /* border: solid; */
+    width: 70vh;
+    height: 10vh;
+    display: flex;
+    border-color: aqua;
+}
+.parraf{
+    /* border: solid; */
+    border-color: rgb(62, 27, 107);
+    height: 8vh;
+    max-width: 19vw;
+    font-size: 19px;
+    color: #EEEEEE;
+}
