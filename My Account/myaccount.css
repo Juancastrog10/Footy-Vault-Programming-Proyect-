@@ -224,13 +224,13 @@ a{
     height: 2vw;
     width: 7vw;
 }
-button{
+#button2{
     border: 0;
     background-color: #2EBB77;
     color: white;
     border-radius: 20px;
     height: 2vw;
-    width: 2vw;
+    width: 8vw;
 }
 .der{
    
@@ -333,7 +333,7 @@ input{
     align-items: flex-start;
     margin-top: 10px;
 }
-.contbuton{
+#contbuton{
     
     width: 8vw;
     height: 4vh;

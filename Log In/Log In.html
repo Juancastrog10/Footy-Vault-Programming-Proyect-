@@ -18,7 +18,10 @@
         <section class="izq">
 
             <div class="logo">
-                <img class="logoi" src="./Recursos/Logos/Logo Footy Vault Blanco.png" alt="Logo Footy Vault">
+                <a class="logoi" href="../Main Page/mainpage.html">
+                    <img class="logoi"  src="./Recursos/Logos/Logo Footy Vault Blanco.png" alt="Logo Footy Vault">
+                </a>
+                
             </div>
 
             <div class="contenidoizq">
@@ -28,8 +31,8 @@
                 </div>
                 <div class="contdown2">
                     <div class="inputizqu">
-                        <div class="continput"><input type="text" placeholder="Username"></div>
-                        <div class="continput"><input type="text" placeholder="Password"></div>
+                        <div class="continput"><input id="user" type="text" placeholder="Username"></div>
+                        <div class="continput"><input id="password" type="password" placeholder="Password"></div>
                     </div>
 
                     <div class="question">
@@ -38,7 +41,7 @@
                     </div>
                 </div>
                 <div class="boton">
-                    <div class="contbuton"><button>LOG IN</button></div>
+                    <div class="contbuton"><button id="login-button">LOG IN</button></div>
                 </div>
 
             </div>
@@ -62,5 +65,7 @@
         <section class="circulos"></section>
             <section class="blanco"></section>
     </section>
+
+    <script src="./Script.js"></script>
 </body>
 </html>

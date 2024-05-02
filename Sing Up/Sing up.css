@@ -62,11 +62,6 @@ body{
     background-color:transparent;
     border-radius: 20px;
 }
-
-.contenedorizq{
-    height: 95vh;
-    width: 29vw;
-}
 .izq{
     /* border: solid; */
     border-color: rgb(255, 115, 0);
@@ -78,6 +73,7 @@ body{
     align-items: center;
 }
 .logo{
+    
     margin: 40px;
     height: 5vh;
     display: flex ;
@@ -217,19 +213,28 @@ a{
     justify-content: center;
     align-items: flex-end;
     margin: 10px;
+    z-index: -5;
+
+    
 }
 .butt{
     /* border: solid; */
-    width: 8vw;
-    height: 4vh;
-    display: flex;
-    justify-content: center;
-}
-button{
     border: 0;
     background-color: #2EBB77;
     color: white;
     border-radius: 20px;
     height: 100%;
     width: 100%;
+    width: 8vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+   
+}
+button{
+    outline: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border: 0;
 }

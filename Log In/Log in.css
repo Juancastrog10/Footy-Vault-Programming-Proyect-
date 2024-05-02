@@ -16,12 +16,14 @@ body{
     display: flex;
     flex-direction: column;
     margin: 8px;
+    z-index: 10;
 
 }
 .question{
     display: flex;
     justify-content: space-between;
     width: 2vw;
+    /*z-index: 5;*/
 }
 
 .container{
@@ -32,14 +34,16 @@ body{
     background-color: #1d1d1dc5;
     border-radius: 20px;
     position: relative;
-    z-index: -3;
+    /*z-index: -3;*/
 }
 #pstyle{
     color: white;
+    /*z-index: -11;*/
 }
 a{
     text-decoration: underline;
     color: #2EBB77;
+    /*z-index: 5;*/
 }
 
 .izq{
@@ -52,9 +56,9 @@ a{
     align-items: center;
     height: 95vh;
     width: 40%;
-    
-
+    z-index: 10;
 }
+    
 .circulos {
     background-image: url(./Recursos/Fondos/circulos_Mesa\ de\ trabajo\ 1.png);
     background-size: cover;
@@ -66,7 +70,6 @@ a{
     display: flex;
     opacity: 0.2;
     position: absolute;
-    z-index: -1;
 }
 
 .blanco{
@@ -78,7 +81,7 @@ a{
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: -2;
+    /*z-index: -2;*/
     
 }
 
@@ -141,16 +144,16 @@ a{
     height: 4.5vh;
     display: flex;
     justify-content: center;
+    border: 2px;
 }
 input{
-    border: solid;
-    border-color: #FFFFFF;
     background-color: transparent;
     color: #FFFFFF;
     border-radius: 20px;
     width: 100%;
     display: flex;
     padding: 12px;
+    outline: none;
 }
 .boton{
     /* border: solid; */
@@ -170,12 +173,11 @@ input{
     justify-content: center;
 }
 button{
-    border: 0;
     background-color: #2EBB77;
-    color: white;
-    border-radius: 20px;
     height: 100%;
     width: 100%;
+    color: white;
+    border-radius: 20px;
 }
 .der{
     /* border: solid; */
