@@ -1,5 +1,17 @@
 import { cargarInformacion } from './utils.js';
 
+class Producto {
+    constructor({ id, image, name, size, description, kit, price }) {
+        this.id = id;
+        this.image = image;
+        this.name = name;
+        this.size = size;
+        this.description = description;
+        this.kit = kit;
+        this.price = price;
+    }
+}
+
 const mostrarDetalleProducto = async () => {
     try {
         const urlParams = new URLSearchParams(window.location.search);
@@ -14,7 +26,8 @@ const mostrarDetalleProducto = async () => {
         const data = await cargarInformacion();
         console.log('Lista de productos:', data.familiadeproductos);
 
-        const producto = data.familiadeproductos.find(item => item.id === productId);
+        const productos = data.familiadeproductos.map(item => new Producto(item));
+        const producto = productos.find(item => item.id === productId);
 
         if (producto) {
             console.log('Producto encontrado:', producto);

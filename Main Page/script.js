@@ -1,45 +1,39 @@
 import { cargarInformacion } from './utils.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const renderizarProductos = async () => {
-        const actualizarContador = () => {
-            cartCounter.textContent = contadorProductos;
-        };
+    class Producto {
+        constructor({ id, image, name, price }) {
+            this.id = id;
+            this.image = image;
+            this.name = name;
+            this.price = price;
+        }
 
-        const data = await cargarInformacion();
-        const productosContainer = document.getElementById('productos');
-        const cartCounter = document.getElementById('cart-counter');
-        let contadorProductos = localStorage.getItem('cartCounter') || 0;
-
-        actualizarContador();
-
-        const crearTarjetaProducto = (producto) => {
+        crearTarjetaProducto() {
             const productoCard = document.createElement('div');
             productoCard.classList.add('items');
 
             const imagen = new Image();
-            imagen.src = producto.image; // Asegúrate de que el campo 'image' en el objeto producto tenga la URL de la imagen
-            imagen.alt = producto.name;
+            imagen.src = this.image;
+            imagen.alt = this.name;
             imagen.width = 200;
             imagen.height = 200;
 
             const nombreProducto = document.createElement('p');
-            nombreProducto.textContent = producto.name;
+            nombreProducto.textContent = this.name;
             nombreProducto.classList.add('nombre-producto');
 
             const precioProducto = document.createElement('p');
-            precioProducto.textContent = `$${producto.price}`;
+            precioProducto.textContent = `$${this.price}`;
             precioProducto.classList.add('precio-producto');
 
             const link = document.createElement('a');
-            link.href = `des.html?id=${producto.id}`;
+            link.href = `des.html?id=${this.id}`;
 
             const botonAgregar = document.createElement('button');
             botonAgregar.textContent = 'Agregar a Favoritos';
             botonAgregar.addEventListener('click', () => {
-                contadorProductos++;
-                actualizarContador();
-                localStorage.setItem('cartCounter', contadorProductos);
+                this.agregarAFavoritos();
             });
 
             link.appendChild(imagen);
@@ -49,11 +43,32 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             productoCard.appendChild(link);
 
-            productosContainer.appendChild(productoCard);
-        };
+            return productoCard;
+        }
 
-        data.familiadeproductos.forEach(producto => {
-            crearTarjetaProducto(producto);
+        agregarAFavoritos() {
+            contadorProductos++;
+            actualizarContador();
+            localStorage.setItem('cartCounter', contadorProductos);
+        }
+    }
+
+    const actualizarContador = () => {
+        cartCounter.textContent = contadorProductos;
+    };
+
+    const data = await cargarInformacion();
+    const productosContainer = document.getElementById('productos');
+    const cartCounter = document.getElementById('cart-counter');
+    let contadorProductos = localStorage.getItem('cartCounter') || 0;
+
+    actualizarContador();
+
+    const renderizarProductos = () => {
+        data.familiadeproductos.forEach(productoData => {
+            const producto = new Producto(productoData);
+            const productoCard = producto.crearTarjetaProducto();
+            productosContainer.appendChild(productoCard);
         });
     };
 
