@@ -2,7 +2,7 @@
 {
     "familiadeproductos": [
         {
-            "id": "1",
+            "id": 1,
             "name": "Fc Barcelona",
             "description": "Nike Dri-FIT men's football jersey. 100% Original. Product made 100% with recycled polyester fibers.",
             "guide": "Product Guide",
@@ -13,7 +13,7 @@
             "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a86b647d-09b1-407b-859b-3ea00c34f2ee/jersey-de-f%C3%BAtbol-dri-fit-del-fc-barcelona-local-2023-24-stadium-W7ntDn.png"
         },
         {
-            "id": "2",
+            "id": 2,
             "name": "Tottenham",
             "description": "Nike Dri-FIT men's football jersey. 100% Original. Product made 100% with recycled polyester fibers.",
             "guide": "Product Guide",
@@ -24,7 +24,7 @@
             "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2f61d505-5b18-4cdb-b453-48715c26a7c1/primera-equipacion-match-tottenham-hotspur-2023-24-camiseta-de-futbol-dri-fit-adv-p2hw7n.png"
         },
         {
-            "id": "3",
+            "id": 3,
             "name": "France",
             "description": "Nike Dri-FIT men's football jersey. 100% Original. Product made 100% with recycled polyester fibers.",
             "guide": "Product Guide",
@@ -35,7 +35,7 @@
             "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/63ed7739-20c7-428e-b6bd-f75372465f18/primera-equipacion-stadium-fff-2024-25-camiseta-de-futbol-tipo-replica-dri-fit-HJ8RW2.png"
         },
         {
-            "id": "4",
+            "id": 4,
             "name": "Liverpool",
             "description": "Nike Dri-FIT men's football jersey. 100% Original. Product made 100% with recycled polyester fibers.",
             "guide": "Product Guide",
@@ -46,7 +46,7 @@
             "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c6305813-862f-48c2-a179-6a929f193b04/segunda-equipacion-stadium-liverpool-fc-2023-24-camiseta-de-futbol-dri-fit-60cQM5.png"
         },
         {
-            "id": "5",
+            "id": 5,
             "name": "Korea Republic",
             "description": "Nike Dri-FIT women's football jersey. 100% Original. Product made 100% with recycled polyester fibers.",
             "guide": "Product Guide",
@@ -57,7 +57,7 @@
             "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2e03b960-516b-4f12-bf4e-004ea31c4f1a/jersey-de-f%C3%BAtbol-dri-fit-replica-de-corea-local-2024-stadium-vcjMSG.png"
         },
         {
-            "id": "6",
+            "id": 6,
             "name": "Argentina",
             "description": "Adidas men's football jersey.",
             "guide": "Product Guide",
@@ -68,7 +68,7 @@
             "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b1bf7415379d446c88f5af7200c879f3_9366/Camiseta_Local_Argentina_Campeon_2022_Blanco_IB3597_21_model.jpg"
         },
         {
-            "id": "7",
+            "id": 7,
             "name": "Neederland",
             "description": "Nike Dri-FIT men's football jersey. 100% Original. Product made 100% with recycled polyester fibers.",
             "guide": "Product Guide",
@@ -79,7 +79,7 @@
             "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/911fc5d3-cbfe-4cf4-af98-2df3a85e13dc/jersey-de-f%C3%BAtbol-dri-fit-replica-de-los-pa%C3%ADses-bajos-equipo-local-2024-25-stadium-S62xTC.png"
         },
         {
-            "id": "8",
+            "id": 8,
             "name": "England",
             "description": "Nike Dri-FIT men's football jersey. 100% Original. Product made 100% with recycled polyester fibers.",
             "guide": "Product Guide",
@@ -90,7 +90,7 @@
             "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a29c1ed8-5a68-4062-8890-a8af170480b0/primera-equipacion-match-inglaterra-2024-25-camiseta-de-futbol-authentic-dri-fit-adv-1V3kXH.png"
         },
         {
-            "id": "9",
+            "id": 9,
             "name": "Colombia",
             "description": "Adidas men's football jersey.",
             "guide": "Product Guide",
@@ -101,7 +101,7 @@
             "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c8630af9804b44c1a38fbb76a3ab93c5_9366/Camiseta_Local_Seleccion_Colombia_24_Amarillo_IP8279_21_model.jpg"
         },
         {
-            "id": "10",
+            "id": 10,
             "name": "Boca Juniors",
             "description": "Adidas men's football jersey.",
             "guide": "Product Guide",
@@ -112,7 +112,7 @@
             "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/62815e69a5414170a2cfb3d0e2cfd1fe_9366/Camiseta_Local_Boca_Juniors_22-23_Azul_HT3691_21_model.jpg"
         },
         {
-            "id": "11",
+            "id": 11,
             "name": "Inter Miami",
             "description": "Adidas men's football jersey.",
             "guide": "Product Guide",
@@ -123,7 +123,7 @@
             "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/119f96b92d964a9b8b0622da9df0d160_9366/Camiseta_Local_Inter_Miami_CF_24-25_Rosa_IU0190_21_model.jpg"
         },
         {
-            "id": "12",
+            "id": 12,
             "name": "Inter Milan",
             "description": "Nike Dri-FIT men's football jersey. 100% Original. Product made 100% with recycled polyester fibers.",
             "guide": "Product Guide",
@@ -134,7 +134,7 @@
             "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e20130da-ca1b-44e6-8c6c-1c67f865ea09/primera-equipacion-stadium-inter-de-milan-2023-24-camiseta-de-futbol-dri-fit-Thnf3z.png"
         },
         {
-            "id": "13",
+            "id": 13,
             "name": "Paris Saint-Germain",
             "description": "Nike Dri-FIT men's football jersey. 100% Original. Product made 100% with recycled polyester fibers.",
             "guide": "Product Guide",
@@ -145,7 +145,7 @@
             "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9d00b104-dacc-4b20-98c5-b5a837b8dca7/primera-equipacion-stadium-paris-saint-germain-2023-24-camiseta-de-futbol-dri-fit-1xGQcc.png"
         },
         {
-            "id": "14",
+            "id": 14,
             "name": "Italy",
             "description": "Adidas men's football jersey.",
             "guide": "Product Guide",
@@ -156,7 +156,7 @@
             "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/46564b4defef48258f218b189278576c_9366/Camiseta_Local_Italia_24_Azul_IN0657_21_model.jpg"
         },
         {
-            "id": "15",
+            "id": 15,
             "name": "Mexico",
             "description": "Adidas men's football jersey.",
             "guide": "Product Guide",
@@ -167,7 +167,7 @@
             "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/240bc47a275e4e81b368afa40126476c_9366/Camiseta_Visitante_Seleccion_Nacional_de_Mexico_Femenina_23_Blanco_HT4194_21_model.jpg"
         },
         {
-            "id": "16",
+            "id": 16,
             "name": "Chelsea",
             "description": "Nike Dri-FIT men's football jersey. 100% Original. Product made 100% with recycled polyester fibers.",
             "guide": "Product Guide",
