@@ -1,4 +1,6 @@
 import { obtenerProductos, Producto } from "./utils.js";
+import { obtenerUsuarioEnSesion } from "../session.js";
+
 
 const renderizarProductos = async () => {
     const productosContainer = document.getElementById('productos');
@@ -20,4 +22,11 @@ const renderizarProductos = async () => {
     });
 };
 
-document.addEventListener('DOMContentLoaded', renderizarProductos);
+document.addEventListener('DOMContentLoaded', () => {
+    const usuarioActivo = obtenerUsuarioEnSesion();
+    if (!usuarioActivo) {
+        window.location.href ="../login.html";
+        return;
+    }
+    renderizarProductos();
+});

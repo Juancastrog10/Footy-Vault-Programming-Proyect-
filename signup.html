@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="signup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Concert+One&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="container">
+    <a href="../index.html"><img id="container__content__img--logo" src="../web_page_assets/logo.png" alt="logo"></a>
+    <h1 id="title--createaccount">Create your account</h1>
+    <form id="registro" class="container__content__form">
+      <div class="fullname">
+        <label>First Name</label>
+        <input type="text" id="firstName" placeholder="First name" required>
+        <label>Last Name</label>
+        <input type="text" id="lastName" placeholder="Last name" required>
+      </div>
+      <label>Email</label>
+      <input type="email" id="correo" placeholder="Username@gmail.com" required>
+      <label>Password</label>
+      <input type="password" id="contrasena" placeholder="Password" required>
+      <label>Confirm Password</label>
+      <input type="password" id="confirmarContrasena" placeholder="Confirm Password" required>
+      <button class="submit-button" type="button" id="signUpButton">Sign up</button>
+      <span>Already have an account? <a href="login.html">Sign in</a></span>
+    </form>
+  </section>
+  <section class="container__illustration">
+    <img class="container__illustration--img" src="../web_page_assets/illustration.png" alt="illustration">
+  </section>
+  
+  <footer>
+    <script type="module" src="signup.js"></script>
+  </footer>
+</body>
+</html>
+

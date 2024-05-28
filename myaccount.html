@@ -7,10 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./Recursos/Iconos/Logo sencillo oscuro.png">
-    <link rel="shortcut icon" href="./Recursos/Iconos/Logo sencillo oscuro.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>My Account</title>
 </head>
 <body>
@@ -21,7 +20,7 @@
         <section class="izq">
             <div class="contenedorup">
                 <div class="logo">
-                    <a href="../Main Page/">
+                    <a href="./Main Page/mainpage.html">
                         <img class="logoi" src="./Recursos/Logos/Logo Footy Vault Blanco.png" alt="Logo Footy Vault">
                     </a>
                 </div>
@@ -34,32 +33,17 @@
                     </div>
                 </div>
             </div>
-            <div class="contmid">
-                <div class="mid2">
-                    <a href="../Main Page/mainpage.html" class="subt">Home</a>
-                    <img class="flechader" src="./Recursos/Iconos/arrow.svg" alt="">
-                </div>
-                <div class="mid">
-                    <a href="../Favorites/favorites.html">Favorites</a>
-                    <img class="flechader" src="./Recursos/Iconos/arrow.svg" alt="">
-                </div>
-                <div class="mid">
-                    <a href="../Index.html">About Us</a>
-                    <img class="flechader" src="./Recursos/Iconos/arrow.svg" alt="">
-                </div>
-            </div>
+            <div class="contmid"></div>
             <div class="contdown">
                 <div class="contdown1">
                     <div class="down1">
-                        <input id="ipi" type="text" placeholder="Old Password">
-                        <input id="ipi" type="text" placeholder="New Password">
+                        <input id="oldPassword" type="password" placeholder="Old Password">
+                        <input id="newPassword" type="password" placeholder="New Password">
                     </div>
                 </div>
                 <div class="contdown2">
                     <div class="down2">
-                        <div class="circulogris"></div>
-                        <h1>I agree</h1>
-                        <button class="bc">Confirm</button>
+                        <button id="confirmButton" class="bc">Confirm</button>
                     </div>
                 </div>
             </div>
@@ -67,27 +51,18 @@
         <section class="der">
             <section class="containder">
                 <div class="li">
-                    <div class="contenedorli">
-    
-                    </div>
+                    <div class="contenedorli"></div>
                 </div>
                 <div class="inputder">
-                    <div class="continput"><input type="text" placeholder="Nombre"></div>
-                    <div class="continput"><input type="text" placeholder="Correo"></div>
-                    <div class="continputd">
-                        <div class="continput"><input type="text" placeholder="********"></div>
-                        <div class="circuloverde"></div>
-                    </div>
+                    <div class="continput"><input id="nombre" type="text" placeholder="Nombre" readonly></div>
+                    <div class="continput"><input id="correo" type="text" placeholder="Correo" readonly></div>
                 </div>
                 <div class="boton">
-                    <div id="button2" class="contbuton"><button>SIGN OUT</button></div>
+                    <div id="button2" class="contbuton"><button id="signOutButton">SIGN OUT</button></div>
                 </div>
             </section>
         </section>
     </section>
-
-    <script src="./Script.js">
-        
-    </script>
+    <script src="myaccount.js" type="module"></script>
 </body>
 </html>
