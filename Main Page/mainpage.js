@@ -40,7 +40,19 @@ document.addEventListener('DOMContentLoaded', () => {
     renderizarProductos();
 
     const inputBusqueda = document.getElementById('busq');
+    let originalInputValue = inputBusqueda.value; // Guardar el valor original del input
+
     inputBusqueda.addEventListener('input', (event) => {
         filtrarProductos(event.target.value);
+    });
+
+    inputBusqueda.addEventListener('focus', () => {
+        inputBusqueda.value = ''; // Limpiar el valor del input cuando se esté en el
+    });
+
+    inputBusqueda.addEventListener('blur', () => {
+        if (inputBusqueda.value === '') {
+            inputBusqueda.value = originalInputValue; // Mostrar el valor original si el input está vacío
+        }
     });
 });

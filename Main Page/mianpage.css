@@ -80,6 +80,8 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    outline: none;
+    padding-left: 5px;
 }
 .contenedorgrande {
     margin: 7vh;
