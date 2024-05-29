@@ -232,7 +232,7 @@ a{
  background-color: transparent;
 }
 .footer{
-    /* border: solid; */
+    margin-top: 100px;
     height: 250px;
     display: flex;
     justify-content: center;

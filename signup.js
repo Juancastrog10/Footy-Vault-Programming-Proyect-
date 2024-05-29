@@ -1,4 +1,4 @@
-import { registrar } from "./session.js";
+import { registrar, login } from "./session.js";
 
 const render = () => {
     const signUpButton = document.querySelector("#signUpButton");
@@ -14,8 +14,14 @@ const render = () => {
 
         try {
             registrar(firstName, lastName, email, password, confirmPassword);
-            alert("User registered successfully!");
-            window.location.href = "login.html";
+
+            // Iniciar sesión automáticamente después del registro
+            if (login(email, password)) {
+                window.location.href = "../Main Page/mainpage.html";
+            } else {
+                alert("Error al iniciar sesión después del registro.");
+                window.location.href = "login.html";
+            }
         } catch (error) {
             alert(error.message);
         }

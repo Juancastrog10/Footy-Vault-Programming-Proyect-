@@ -28,8 +28,9 @@ export class Favoritos {
 
         const botonEliminar = document.createElement('button');
         botonEliminar.textContent = 'Eliminar de Favoritos';
-        botonEliminar.addEventListener('click', () => {
-            this.eliminarDeFavoritos();
+        botonEliminar.classList.add('eliminar-favorito');
+        botonEliminar.addEventListener('click', async () => {
+            await eliminarFavorito(this.id);
         });
 
         productoCard.appendChild(imagen);
@@ -44,6 +45,17 @@ export class Favoritos {
         const usuario = obtenerUsuarioEnSesion();
         usuario.favoritos = usuario.favoritos.filter(id => id !== this.id);
         actualizarUsuario(usuario);
-        // Actualizar el contador de productos favoritos
     }
 }
+
+export const eliminarFavorito = async (id) => {
+    try {
+        const usuario = obtenerUsuarioEnSesion();
+        usuario.favoritos = usuario.favoritos.filter(favoritoId => favoritoId !== id);
+        await actualizarUsuario(usuario);
+        console.log(`Eliminando el favorito con ID: ${id}`);
+    } catch (error) {
+        console.error('Error al eliminar el favorito:', error);
+        throw error;
+    }
+};

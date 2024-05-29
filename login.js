@@ -15,9 +15,11 @@ const render = () => {
         }
 
         try {
-            login(email, password);
-            alert("User logged in successfully!");
-            window.location.href = "../Main Page/mainpage.html";
+            if (login(email, password)) {
+                window.location.href = "../Main Page/mainpage.html";
+            } else {
+                alert("Invalid email or password.");
+            }
         } catch (error) {
             alert(error.message);
         }
