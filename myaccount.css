@@ -264,15 +264,12 @@ a{
 .contenedorli{
     /* border: solid; */
     border-color: chartreuse;
-    background-image: url(Recursos/Iconos/PersonIcon.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     width: 17.5vw;
     height: 35vh;
-    border-radius: 50%;
-    background-color: white;
-}
+    border-radius: 50%;}
 .inputder{
    
     border-color: chocolate;
