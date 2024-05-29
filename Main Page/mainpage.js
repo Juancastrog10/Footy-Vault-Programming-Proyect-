@@ -1,9 +1,9 @@
 import { obtenerProductos, Producto } from "./utils.js";
 import { obtenerUsuarioEnSesion } from "../session.js";
 
-
-const renderizarProductos = async () => {
+const renderizarProductos = async (productos = null) => {
     const productosContainer = document.getElementById('productos');
+    productosContainer.innerHTML = ''; // Limpiar productos existentes
     const cartCounter = document.getElementById('cart-counter');
     let contadorProductos = localStorage.getItem('cartCounter') || 0;
 
@@ -11,7 +11,7 @@ const renderizarProductos = async () => {
         cartCounter.textContent = contadorProductos;
     };
 
-    const data = await obtenerProductos();
+    const data = productos || await obtenerProductos();
 
     actualizarContador();
 
@@ -22,12 +22,25 @@ const renderizarProductos = async () => {
     });
 };
 
+const filtrarProductos = async (termino) => {
+    const data = await obtenerProductos();
+    const productosFiltrados = data.familiadeproductos.filter(producto => 
+        producto.name.toLowerCase().includes(termino.toLowerCase())
+    );
+    renderizarProductos({ familiadeproductos: productosFiltrados });
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     const usuarioActivo = obtenerUsuarioEnSesion();
     if (!usuarioActivo) {
-        window.location.href ="../login.html";
+        window.location.href = "../login.html";
         return;
     }
-    renderizarProductos();
-});
 
+    renderizarProductos();
+
+    const inputBusqueda = document.getElementById('busq');
+    inputBusqueda.addEventListener('input', (event) => {
+        filtrarProductos(event.target.value);
+    });
+});

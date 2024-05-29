@@ -1,8 +1,7 @@
-// script.js de favoritos
 import { Favoritos, eliminarFavorito } from './utils.js';
 import { obtenerFavoritos, revisarSesion } from "../session.js";
 
-const renderFavs = async () => {
+const renderFavs = async (favs = null) => {
     const usuario = revisarSesion();
     if (!usuario) {
         // Si no hay usuario activo, redirigir a la página de inicio de sesión
@@ -10,7 +9,7 @@ const renderFavs = async () => {
         return;
     }
 
-    const data = await obtenerFavoritos();
+    const data = favs || await obtenerFavoritos();
     const productosContainer = document.getElementById('productos');
     productosContainer.innerHTML = ''; // Limpiar el contenedor antes de renderizar
 
@@ -37,4 +36,19 @@ const renderFavs = async () => {
     }
 };
 
-document.addEventListener('DOMContentLoaded', renderFavs);
+const filtrarFavoritos = async (termino) => {
+    const data = await obtenerFavoritos();
+    const favoritosFiltrados = data.filter(favorito => 
+        favorito.name.toLowerCase().includes(termino.toLowerCase())
+    );
+    renderFavs(favoritosFiltrados);
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderFavs();
+
+    const inputBusqueda = document.getElementById('busq');
+    inputBusqueda.addEventListener('input', (event) => {
+        filtrarFavoritos(event.target.value);
+    });
+});
