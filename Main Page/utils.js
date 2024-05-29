@@ -1,3 +1,5 @@
+import { obtenerUsuarioEnSesion, actualizarUsuario } from "../session.js";
+
 export const obtenerProductos = async () => {
   const response = await fetch("https://raw.githubusercontent.com/Juancastrog10/Footy-Vault-Programming-Proyect-/main/Main%20Page/data.json");
   const data = await response.json();
@@ -50,9 +52,15 @@ export class Producto {
   }
 
   agregarAFavoritos() {
-    let contadorProductos = localStorage.getItem('cartCounter') || 0;
-    contadorProductos++;
-    localStorage.setItem('cartCounter', contadorProductos);
+    const usuario = obtenerUsuarioEnSesion();
+    if (!usuario) {
+        // Si no hay usuario activo, redirigir a la página de inicio de sesión
+        window.location.href = 'login.html';
+        return;
+    }
+
+    usuario.favoritos.push(this.id);
+    actualizarUsuario(usuario);
     actualizarContador();
   }
 }

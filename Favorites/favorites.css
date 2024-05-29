@@ -147,11 +147,10 @@ a{
     justify-content: center;
     gap: 2rem;
     padding: 0 2rem;
-    max-width: 20hw; 
     margin: auto; 
 }
 .items {
-    width: calc((100% / 4) - 2rem); /* Ancho para mostrar tres elementos por fila */
+    width: calc((80% / 4) - 2rem); /* Ancho para mostrar tres elementos por fila */
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -372,17 +371,11 @@ a{
 }
 
 #cart-counter {
-    background-color: rgb(255, 255, 255); 
-    color: #249e66; 
-    border: none; 
-    border-radius: 15px; 
-    padding: 8px 12px; 
-    display: flex;
-    text-align: center; 
-    font-weight: bold; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    #cart-counter {
+        color: transparent;
+        width: 0;
+        height: 0;
+     }
 }
 .items img {
     max-width: 50vw; 

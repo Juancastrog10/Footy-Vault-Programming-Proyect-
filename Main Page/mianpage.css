@@ -45,8 +45,12 @@ header {
 }
 
 #Home {
+    width: 10vw;
+    font-size: 20px;
+    font-weight: 600;
     color: #2EBB77;
     display: flex;
+    flex-direction: row;
 }
 
 .busqueda {
@@ -297,17 +301,9 @@ header {
 
 }
 #cart-counter {
-    background-color: rgb(255, 255, 255); 
-    color: #249e66; 
-    border: none; 
-    border-radius: 15px; 
-    padding: 8px 12px; 
-    display: flex;
-    text-align: center; 
-    font-weight: bold; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   color: transparent;
+   width: 0;
+   height: 0;
 }
 
 .bs, .sale{

@@ -60,7 +60,7 @@ a{
 }
     
 .circulos {
-    background-image: url(./Recursos/Fondos/circulos_Mesa\ de\ trabajo\ 1.png);
+    background-image: url(./Recursos/Body/circulos_Mesa\ de\ trabajo\ 1.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -127,7 +127,7 @@ a{
     gap: 2rem;
 }
 .question{
-    width: 17vw;
+    width: 19vw;
     display: flex;
     justify-content: space-between;
 }
